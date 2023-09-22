@@ -1,0 +1,79 @@
+/* lobby.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #080710;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #f8f8f8;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form input[type="text"]{
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #f8fbff;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+form input[type="submit"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #f8fbff;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+form input[type="submit"] {
+  background-color: #007bff; /* Back to blue */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #004eaa; /* Darker blue on hover */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f8f8f8; /* Light gray on hover */
+}

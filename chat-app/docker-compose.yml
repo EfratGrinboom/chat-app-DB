@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+
+### MySQL Container
+  mysql:
+    build:
+      context: ./sql/
+      # restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: pass
+        MYSQL_DATABASE: chatAppDB  
+    ports:
+      - "3306:3306"
+
+
+### Chat App Container
+  chat-app:
+    build:
+      context: ./python
+    command: sh -c "sleep 5s && python3.8 ./chatApp.py"
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mysql
+
+
